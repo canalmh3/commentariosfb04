@@ -1,0 +1,1044 @@
+<!-- Comentario Facebook-->
+         <style>
+  .fb-comments{
+      background-color: white!important;
+     border:1px solid #e9ebee!important
+  }
+ table th {
+      padding: 2px !important;
+  }
+  td, table tbody tr{
+      background-color: #fff!important;
+  }
+    @media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+    background: 0 0;
+  }
+  .video-player iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+  #frame {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+}
+
+* {
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+.mark-comments{
+  color: #365899;
+}
+.fb-comments {
+  border: 1px solid #e9ebee!important;
+  border-radius: 18px;
+  padding: 12px;
+  margin: auto;
+  position: relative;
+  color: #4267b2;
+}
+
+.fb-comments-header {
+  padding:  0;
+  border-bottom: 1px solid #e9ebee!important;
+}
+
+.fb-comments-header span {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.fb-comments-comment {
+  border: none!important;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.fb-comments-reply-wrapper {
+  margin-left: 60px;
+  border-left: 1px dotted #e9ebee!important;
+  padding-left: 5px;
+}
+
+tr,
+td {
+  border: none!important;
+  margin: 0;
+}
+
+td {
+  padding: 2.5px;
+}
+
+tr {
+  padding: 2.5px 0;
+}
+
+.fb-comments-comment-img {
+  vertical-align: top;
+  width: 48px;
+  padding-right: 5px;
+}
+
+.fb-comments-comment-img img {
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.fb-comments-comment-name {
+  font-size: 0.85em;
+}
+
+.fb-comments-comment-name name {
+  color: #365899;
+  text-decoration: none!important;
+  font-weight: 700;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-name name:hover {
+  text-decoration: underline!important;
+}
+
+.fb-comments-comment-name occupation {
+  color: #90949c!important;
+}
+
+.fb-comments-comment-text {
+font-weight: 300;
+  font-size: 0.9em;
+  color: #000;
+  border-radius: 21px;
+  background-color: #eaebef!important;
+  padding-left: 12px
+}
+.fb-comments-comment-actions{
+    padding: 0 2px !important;
+}
+.fb-comments-comment-actions like,
+.fb-comments-comment-actions reply {
+  font-size: 0.75em;
+  color: #4267b2;
+  text-decoration: none!important;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions like.liked {
+  color: #90949c;
+}
+
+.fb-comments-comment-actions like:hover,
+.fb-comments-comment-actions reply:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-comment-actions likes {
+  font-size: 13px;
+  background: url(fotos/likes.png);
+  background-repeat: no-repeat;
+  padding-left: 43px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  margin-top: -10px;
+  float: right;
+  background-color: #fff!important;
+  border: solid #eaebef;
+  border-radius: 19px;
+}
+
+.fb-comments-comment-actions date {
+  font-size: 0.75em;
+  color: #90949c;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions date:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-loadmore {
+  background: #4080ff!important;
+  border: 1px solid #4080ff!important;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.875em;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.fb-reply-input {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px 7.5px;
+  font-size: 0.75em;
+  color: #000;
+  outline: none;
+}
+
+.fb-reply-input:hover,
+.fb-reply-button:hover {
+  outline: none;
+}
+
+.fb-reply-button {
+  background: #4080ff!important;
+  border: 1px solid #4080ff!important;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 5px 7.5px;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+  outline: none;
+}
+
+.bbtn {
+  width: 100%;
+  max-width: 449px;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: 0 !important;
+  }
+}
+
+    header {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+      text-transform: uppercase bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      color: #2e82bc; 
+      outline: 0; 
+      line-height: 1; 
+      text-align: center; 
+      position:relative!important; display: inline-block!important;
+      border-style: solid; 
+      width: 100%; padding-left: 0!important; padding-right: 0!important; 
+      margin-bottom: 10px; 
+      padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+      border-radius: 6px; 
+      background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%); 
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+      text-decoration: none!important;
+    }
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 25px;
+      color: #ffffff; 
+      font-family: Oswald; 
+      font-weight: bold; 
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 15px; 
+      color: #f5e051; 
+      font-family: Cabin; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
+    .comment {
+      display: block; 
+      padding: 10px 0; 
+      line-height: 20px;
+    }
+    .span {
+      color: #365899; 
+      font-weight: bold;
+    }
+    .answer {
+      color: #444; 
+      -webkit-font-smoothing: antialiased;
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      padding-top: 10px; 
+      line-height: 20px;
+      padding-left: 9px; 
+      border-left: 1px solid #E9EBEE; margin-left: 50px; padding-bottom: 0;
+    }
+    .classeNova {
+      color: #444; 
+      -webkit-font-smoothing: antialiased; 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      font-family: Arial; 
+      background-color:
+      #F6F7F9!important;
+      font-size: 14px; 
+      padding-top: 20px;      
+    }
+    .paragrafo {
+      color: #444; 
+      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+      line-height: 1.5em; 
+      margin: 0;
+      margin-left: 60px; 
+      margin-bottom: 0px;
+    }
+    .like {
+      font-size: 11px; color: #90949c;
+    }
+    .twenty1 {
+      font-weight: 700; 
+      border-bottom: 1px solid #E9EBEE; 
+      display: block; 
+      padding-bottom: 6px;
+    }
+    .imgComment {
+      width: 60px; 
+      height: 50px; 
+      float: left; 
+      padding-right: 10px;
+    }
+    .hide {
+      display: none;
+    }
+    .pirataria h3 {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+    .pirataria b{
+      color: #FFC400;
+    }
+    .pirataria {
+      font-size: 12px;
+      text-align: justify;
+    }
+    footer {
+      background-color: black;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: white;
+    }
+    .cpy {
+      font-size: 12px;
+      margin: 37px 0px 20px 0px;
+    }
+    .links a {
+      font-size: 12px;
+      color: white;
+    }
+    .lucas{
+      font-size: 50px;
+      color: #020201;
+      text-shadow: 2px 2px 2px white;
+    }
+  </style>
+<script>
+  function showBtn1 () {
+      document.getElementById("btn1").classList.remove("hide")
+    }
+    
+    
+  function loadMore() {
+    $('#more').show()
+    $('.fb-comments-loadmore').hide().remove()
+}
+$(document).ready(function() {
+    $('date').each(function() {
+        if ($(this).attr('data-date-minus')) {
+            $(this).html(dateMinus($(this).attr('data-date-minus')))
+        }
+    })
+})
+
+function dateMinus(what) {
+    var today = Date.now()
+    var nw = today - what * 10000
+    var newd = new Date()
+    newd.setTime(nw)
+    var mthName = ['Janeiro', 'Fevereiro', 'MarÃ§o', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    var mthNm = mthName[newd.getMonth()]
+    return (newd.getDate() +
+        ' de ' +
+        mthNm +
+        ' de ' +
+        newd.getFullYear() +
+        ' ' +
+        newd.getHours() +
+        ':' +
+        round(newd.getMinutes()))
+}
+
+function round(what) {
+    if (what < 10) {
+        return '0' + what
+    } else {
+        return what
+    }
+}
+$('like').on('click', function() {
+    if ($(this).hasClass('liked')) {
+        $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text(parseInt($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text()) - 1)
+        $(this).removeClass('liked')
+        $(this).text('Curtir')
+    } else {
+        $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text(parseInt($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text()) + 1)
+        $(this).addClass('liked')
+        $(this).text('Descurtir')
+    }
+})
+$('reply').on('click', function() {
+    if (fbobj != null) {
+        handleReply($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').attr('id'))
+    } else {
+        logInWithFacebook(handleReply, $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').attr('id'))
+    }
+})
+
+function handleReply(id) {
+    var text = ''
+    var obj = $('#' + id)
+    if (obj.hasClass('fb-comments-reply-wrapper')) {
+        text = '@' + obj.find('name').text()
+        obj = $('#' + id.split('-')[0])
+    }
+    obj.find('.row.reply-box').remove()
+    obj.append('<div class="row reply-box" id="reply-' +
+        obj.attr('id') +
+        '"><div class="col-xs-10"><input type="text" value="' +
+        text +
+        '" placeholder="AÃ±ade una respuesta..." class="fb-reply-input" /></div><div class="col-xs-2"><button class="fb-reply-button" onclick="javascript:postReply(' +
+        obj.attr('id') +
+        ');">Responder</button></div></div>')
+}
+
+function postReply(id) {
+    var obj = $('#reply-' + id)
+    if (obj && obj.find('.fb-reply-input').val()) {
+        var date = new Date()
+        var fbreply = {
+            forid: id,
+            date: date,
+            text: obj.find('.fb-reply-input').val()
+        }
+        fbreplies.push(fbreply)
+        var replyc = reply.clone()
+        replyc.attr('id', id + '-' + Math.floor(Math.random() * 100 + 10))
+        replyc.find('name').text(fbobj.name)
+        replyc.find('.fb-comments-comment-img').find('img').attr('src', fbobj.pictureURL)
+        replyc.find('.fb-comments-comment-text').text(obj.find('.fb-reply-input').val())
+        replyc.find('date').each(function() {
+            if ($(this).attr('data-date-minus')) {
+                $(this).html(dateMinus($(this).attr('data-date-minus')))
+            }
+        })
+        $('#' + id).after(replyc)
+        obj.remove()
+        var today = new Date()
+        today.setDate(today.getFullYear() + 1)
+        setCookie('fbreplies', JSON.stringify(fbreplies), today)
+    }
+}
+
+</script>
+<div class="fb-comments" style="margin-top: 5px;">
+<div class="fb-comments-header">
+<span>Mostrando 25 de 246 comentários
+</span>
+</div>
+<div class="fb-comments-wrapper" id="1">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" src="fotos/1.jpg" width="48" height="48" alt="imagem 1"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Davi Marinho</name>
+</font>
+<br>
+Esse lote está incrível! Muito melhor que os anteriores. Consegui um iPhone 13 praticamente de graça!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+·
+</font></font><likes>31</likes>
+<date><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">27 minutos</font></font></date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-wrapper" id="4">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/2.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Talisson Freire</name>
+</font>
+<br>
+Recebi um drone da DJI, mas as instruções estão em inglês. Alguém pode me enviar o manual por gentileza?
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Curtir</font></font></like><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+·
+</font></font><reply><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Responder</font></font></reply><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+·
+</font></font><likes>27</likes>
+<date><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">53 minutos</font></font></date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-wrapper" id="11">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/3.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Mônica Tavares</name>
+<br>
+</font>
+Pessoal, estou curiosa para ver o que vai vir no lote parcial. Alguém mais ansioso como eu?
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Curtir</font></font></like><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+·
+</font></font><reply><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Responder</font></font></reply><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+·
+</font></font><likes>11</likes>
+<date><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 horas</font></font></date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-wrapper" id="12">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem perfil" src="fotos/4.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Wagner Fernandes</name>
+</font>
+<br>
+Acabei de receber um notebook top de linha no meu lote, estou impressionado com a sorte!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>62</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="13">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/5.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Pablo Nascimento</name>
+</font>
+<br>
+Wagner Fernandes, você realmente fez um ótimo negócio com o notebook top de linha! Parabéns!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>7</likes>
+<date>2 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="14">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/6.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Rafael Fernandes</name>
+</font>
+<br>
+Wagner Fernandes, compartilha conosco o que veio no seu lote completo! Estamos curiosos para saber.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>93</likes>
+<date>1 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-wrapper" id="16">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/7.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Dani Costa </name>
+</font>
+<br>
+Nicole Gazeta, a entrega foi super rápida para mim também. Adorei a eficiência!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>23</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="17">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/8.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Josue Amorim Santos</name>
+</font>
+<br>
+Pessoal, alguém mais comprou o lote parcial e está ansioso para ver o que vai receber?
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes> 6</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="19">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/9.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Dani Costa</name>
+</font>
+<br>
+Julia Leme, ótima ideia! Vai ser legal ver as novidades que todos receberam nos lotes.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes> 6</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-wrapper" id="16">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/10.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Isabella Soares </name>
+</font>
+<br>
+Acabei de receber meu lote e estou maravilhada! Veio um notebook top de linha, mal posso acreditar na sorte!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>13</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="17">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/11.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Edimilson Lacerda</name>
+</font>
+<br>
+Fernando Valladares, que sorte com os controles de PS5! Aposto que foram disputados.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>17</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="19">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/12.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Junia Celia</name>
+</font>
+<br>
+Maju Nascimento, a entrega foi super rápida aqui em Porto Alegre também. Estou aguardando o meu.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes> 6</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="19">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/13.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Prof João Carlos Celia</name>
+</font>
+<br>
+Recebi meu lote hoje e fiquei surpreso com a variedade de produtos. Muito bom!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>11</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-wrapper" id="16">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/14.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Amilton Santos</name>
+</font>
+<br>
+Julia Leme, vender e comprar de novo foi uma ótima estratégia! Que bom que conseguiu o que queria.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>43</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="17">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/15.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Willian Almeida</name>
+</font>
+<br>
+Maju Nascimento, concordo! A entrega foi super rápida aqui em Porto Alegre também.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes> 26</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="19">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/16.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Amilton Santos</name>
+</font>
+<br>
+Nicole Gazeta, com certeza o Samsung S23 será um excelente presente!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes> 16</likes>
+<date>3 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-wrapper" id="16">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil" src="fotos/17.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Bia Lima</name>
+</font>
+<br>
+Maria Eduarda Rodrigues, sua sorte realmente é impressionante! Parabéns pelas conquistas.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>33</likes>
+<date>4 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="17">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/18.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Daniel Alves</name>
+</font>
+<br>
+Maju Nascimento, obrigado pela informação! Estou ansioso para receber meu lote aqui em São Paulo.
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>7</likes>
+<date>4 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fb-comments-reply-wrapper" id="17">
+<table class="fb-comments-comment">
+<tbody>
+<tr>
+<td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75" src="fotos/19.jpg"></td>
+</tr>
+<tr>
+<td class="fb-comments-comment-text">
+<font class="fb-comments-comment-name">
+<name>Michel Melo</name>
+</font>
+<br>
+Maju Nascimento, a entrega foi super rápida para mim também. Adorei a eficiência!
+</td>
+</tr>
+<tr>
+<td class="fb-comments-comment-actions">
+<like>Curtir</like>
+·
+<reply>Responder</reply>
+·
+<likes>23</likes>
+<date>4 h</date>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 221 comentários</button></div>
+         <!-- Comentario Facebook-->
